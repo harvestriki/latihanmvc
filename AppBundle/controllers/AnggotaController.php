@@ -14,7 +14,6 @@ class AnggotaController extends Controller
                 $anggota = new Anggota();
 		$anggota->load($_POST);   
 		$anggota->save();
-                
             }
             
             return $this->render('index');

@@ -9,7 +9,7 @@ class SiteController extends Controller
 {
 	public function indexAction(){
 
-		return $this->render('index', ['name' => 'ujang']);
+		return $this->render('index', ['name' => 'ujang kangen hayati']);
 	}
 }
 

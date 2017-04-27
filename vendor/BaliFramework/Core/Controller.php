@@ -18,6 +18,7 @@ class Controller
 
 	public function render($view_name, $data = NULL){
 
+                // ini untuk data
 		if(is_array($data)){
 
 			foreach ($data as $key => $value){
@@ -30,7 +31,7 @@ class Controller
 		$layout = $this->_layoutPath.'/'.$this->_layout.'.php';
 		$controller = strtolower(str_replace('Controller', '', get_class($this)));
 		$view = $this->_viewPath.'/'.$controller.'/'.$viewFile;
-
+                
 		ob_start();
 		include($view);
 		$content = ob_get_contents();
